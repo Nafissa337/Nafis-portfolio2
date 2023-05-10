@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head><title>Portfolio - Spil, leg og samarbejde - Isaac</title><link rel="stylesheet" href="samarbejdecss.css"><meta charset="UTF-8"></head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <script src="p5.timer.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    
+  </head>
+    <script src="thisbitchbetterwork/sketch.js"></script>
+<body scroll="no" style="overflow: hidden">
+<div class="content">
+<img src="Pictures/gameflowchart.jpg" width="400" height="250"/>
+</div>
+<p1>I vores spil, styrer man en lille trekant, som følger <br> en tilfældigt genereret bane, og ikke må røre banens <br> vægge, eller cirklerne der flyver forbi i tilfældige <br> retninger og hastigheder.Man får et point hvert sekund,<br> så spillet handler om at overleve så længe som muligt,<br> og kan altså ikke vindes. Vores spillere ville styre<br> styre spillet gennem en Dance Dance Revolution <br> lignende controller. Fire plader på gulvet koblet til <br>Makey Makey, som når trådt på vil føre trekanten i den<br> korresponderende retning. Det vil sige, at spilleren skal<br> stå op og bevæge sine ben hurtigt i spilleprocessen.<br> Alternativt kan man sidde på en stol ved siden af <br>controlleren og løfte sine ben på ethvert tidspunkt, hvor <br>de ikke trykker på en plade, og således få en ab-workout.</p1>
+
+<p2><code>function stopGame() {<br  >
+image(img, 0, 0);<br>
+textSize(25);<br>
+fill(103,49,71);<br>
+text('Final score:',310,190);<br>
+text(elapsedSeconds,390,190);<br>
+noLoop();<br>
+text('Arrow up to play again',320,440);<br>
+playagain=1;<br>
+if (elapsedSeconds>highscore){<br>
+highscore=elapsedSeconds;}<br>
+}</code></p2><br><br>
+<p3>Koden ovenfor viser stopGame funktionen, som sørger for at vise game over skærmen, efter man har ramt en cirkel eller et rektangel. Anden linje viser billedet som er preloadet. Så ændres tekststørrelsen og farven, hvorefter<br> scoren printes. noLoop funktionen stopper alle loopene funktioner, herunder sketch funktionen, som tegner spillets<br> næste frame over den forrige hver frame. Derfor bliver game over skærmen ikke overskygget af spillet, der ellers ville<br> fortsætte. Så printes vejledningen til hvordan man spiller igen, og playagain variablen sætte lig 1, hvilket tillader<br> replay funktionen at genstarte spillet. Yderligere tjekker if funktionen om highscore er blevet slået og opdaterer den,<br> hvis det er tilfældet.</p3>
+
+    </body>
+</html>

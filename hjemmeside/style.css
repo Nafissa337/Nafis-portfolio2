@@ -1,0 +1,40 @@
+* {
+    background-color: black;
+}
+
+h1 {
+    color: aqua;
+    font-family: cursive;
+}
+h2{
+    color: aliceblue;
+    font-family: cursive;
+    
+}
+
+.lyrics {
+    text-align: center;
+    color: indianred;
+    background-color: black;
+    font-family: cursive;
+}
+
+#button1 {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: red;
+    background-color: black;
+    cursor: pointer;
+}
+
+#center {
+    text-align: center;
+}
+
+#Tilbage til hovedsiden {
+    text-align: center;
+    color: red;
+    background-color: black;
+    cursor: pointer;
+}

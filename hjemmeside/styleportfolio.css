@@ -1,0 +1,24 @@
+* {
+    background-color: yellow;
+}
+
+h1 {
+    color: red;
+    font-family: cursive;
+}
+h2{
+    color: aliceblue;
+    font-family: cursive;
+}
+
+.presentation {
+    text-align: center;
+   color: hotpink;
+    background-color: yellow;
+    font-family: cursive;
+}
+
+#center {
+    text-align: center;
+}
+
